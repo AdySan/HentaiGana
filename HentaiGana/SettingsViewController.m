@@ -35,7 +35,23 @@
    self.KanjiList = [[NSMutableArray alloc] initWithContentsOfFile:KanjiPath];
    self.HentaiGanaList = [[NSMutableArray alloc] initWithContentsOfFile:HentaiGanaPath];
    self.ShutokuList = [[NSMutableArray alloc] initWithContentsOfFile:ShutokuPath];
+   
     
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *writableDBPath= [documentsDirectory stringByAppendingPathComponent:@"Shutoku.plist"];
+    NSMutableArray *DoneArray = [[NSMutableArray alloc] initWithContentsOfFile:writableDBPath];
+    
+    int occurrences1 = 0;
+    int occurrences2 = 0;
+    for(NSNumber *whatcha in DoneArray){
+        occurrences1 += ([whatcha isEqualToNumber:[NSNumber numberWithInt:2]]?1:0);
+        occurrences2 += ([whatcha isEqualToNumber:[NSNumber numberWithInt:1]]?1:0);
+    }
+    NSLog(@"Remainging Words = %d",occurrences1);
+    self.Nokori.text = [NSString stringWithFormat:@"残り：%d",occurrences1];
+    self.ShutokuKaisu.text =[NSString stringWithFormat:@"習得：%d",occurrences2];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -53,10 +69,44 @@
 }
 */
 
+- (IBAction)initList:(id)sender {
+    
+    BOOL success;
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSError *error;
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *writableDBPath= [documentsDirectory stringByAppendingPathComponent:@"Shutoku.plist"];
+    success = [fileManager fileExistsAtPath:writableDBPath];
+    if (success){
+        NSLog(@"plist exists");
+        NSString *defaultDBPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Shutoku.plist"];
+        [fileManager removeItemAtPath:writableDBPath error:&error];
+        if (!success) {
+            NSAssert1(0, @"Failed to delete writable database file with message '%@'.", [error localizedDescription]);
+        }
+        success = [fileManager copyItemAtPath:defaultDBPath toPath:writableDBPath error:&error];
+        if (!success) {
+            NSAssert1(0, @"Failed to create writable database file with message '%@'.", [error localizedDescription]);
+        }
+        
+        return;
+    }
+    
+    NSLog(@"plist does not exist, so making a blank one");
+    // The writable database does not exist, so copy the default to the appropriate location.
+    NSString *defaultDBPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Shutoku.plist"];
+    success = [fileManager copyItemAtPath:defaultDBPath toPath:writableDBPath error:&error];
+    if (!success) {
+        NSAssert1(0, @"Failed to create writable database file with message '%@'.", [error localizedDescription]);
+    }
+    
+}
+
+
 #pragma TableView methods
 
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
 //    if (tableView == self.searchDisplayController.searchResultsTableView) {
 //        return [self.searchResultsArray count];
 //    }
@@ -70,8 +120,7 @@
 //    }
 }
 
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *cellID = @"cellID";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
     if (cell == nil) {
@@ -100,7 +149,5 @@
 //    }
     return cell;
 }
-
-
 
 @end

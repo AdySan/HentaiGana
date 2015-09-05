@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface SettingsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@property (strong, nonatomic) IBOutlet UILabel *Nokori;
+@property (strong, nonatomic) IBOutlet UILabel *ShutokuKaisu;
 
 @end

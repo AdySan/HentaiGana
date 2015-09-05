@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		70056F771A06F23A00832A23 /* BaseTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 70056F721A06F23A00832A23 /* BaseTransitionAnimator.m */; };
+		70056F781A06F23A00832A23 /* OptionsTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 70056F741A06F23A00832A23 /* OptionsTransitionAnimator.m */; };
+		70056F791A06F23A00832A23 /* OptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70056F761A06F23A00832A23 /* OptionsViewController.m */; };
+		701DB7CC19E8E4BF0088CE29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 701DB7CB19E8E4BF0088CE29 /* main.m */; };
+		701DB7CF19E8E4BF0088CE29 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 701DB7CE19E8E4BF0088CE29 /* AppDelegate.m */; };
+		701DB7D219E8E4BF0088CE29 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 701DB7D119E8E4BF0088CE29 /* ViewController.m */; };
+		701DB7D519E8E4BF0088CE29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 701DB7D319E8E4BF0088CE29 /* Main.storyboard */; };
+		701DB7D719E8E4BF0088CE29 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 701DB7D619E8E4BF0088CE29 /* Images.xcassets */; };
+		701DB7DA19E8E4BF0088CE29 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 701DB7D819E8E4BF0088CE29 /* LaunchScreen.xib */; };
+		701DB7E619E8E4BF0088CE29 /* HentaiGanaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 701DB7E519E8E4BF0088CE29 /* HentaiGanaTests.m */; };
+		701DB7F019E8EB090088CE29 /* HentaiGana.plist in Resources */ = {isa = PBXBuildFile; fileRef = 701DB7EF19E8EB090088CE29 /* HentaiGana.plist */; };
+		701DB7FB19E8FC770088CE29 /* Kana.plist in Resources */ = {isa = PBXBuildFile; fileRef = 701DB7FA19E8FC770088CE29 /* Kana.plist */; };
+		701DB80F19E8FE3B0088CE29 /* Kanji.plist in Resources */ = {isa = PBXBuildFile; fileRef = 701DB80E19E8FE3B0088CE29 /* Kanji.plist */; };
+		70539D9B1A072F9200818C9B /* IntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70539D9A1A072F9200818C9B /* IntroViewController.m */; };
+		70539D9D1A07323500818C9B /* notebookpaper.png in Resources */ = {isa = PBXBuildFile; fileRef = 70539D9C1A07323500818C9B /* notebookpaper.png */; };
+		70539D9F1A0734A600818C9B /* notepad-page.svg in Resources */ = {isa = PBXBuildFile; fileRef = 70539D9E1A0734A600818C9B /* notepad-page.svg */; };
+		70539DA11A073B6500818C9B /* swipe@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70539DA01A073B6500818C9B /* swipe@2x.png */; };
+		70539DAB1A0744A300818C9B /* burger@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70539DAA1A0744A300818C9B /* burger@2x.png */; };
+		70539DAD1A0744CD00818C9B /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70539DAC1A0744CD00818C9B /* settings@2x.png */; };
+		70539DB11A07459700818C9B /* OldPaper@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 70539DB01A07459700818C9B /* OldPaper@2x.jpg */; };
+		70B3DD3A19F4416400562D94 /* Shutoku.plist in Resources */ = {isa = PBXBuildFile; fileRef = 70B3DD3919F4416400562D94 /* Shutoku.plist */; };
+		70B3DD3D19F47D4100562D94 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B3DD3C19F47D4100562D94 /* SettingsViewController.m */; };
+		70D7FCE219F42D5400C7BB08 /* あ_1_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 70D7FCD019F42D5400C7BB08 /* あ_1_1.png */; };
+		70D7FCE319F42D5400C7BB08 /* あ_1_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 70D7FCD119F42D5400C7BB08 /* あ_1_2.png */; };
+		70D7FCE419F42D5400C7BB08 /* あ_1_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 70D7FCD219F42D5400C7BB08 /* あ_1_3.png */; };
+		70D7FCE519F42D5400C7BB08 /* あ_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 70D7FCD319F42D5400C7BB08 /* あ_1.png */; };
+		70D7FCE619F42D5400C7BB08 /* あ_2_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 70D7FCD419F42D5400C7BB08 /* あ_2_1.png */; };
+		70D7FCE719F42D5400C7BB08 /* あ_2_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 70D7FCD519F42D5400C7BB08 /* あ_2_2.png */; };
+		70D7FCE819F42D5400C7BB08 /* あ_2_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 70D7FCD619F42D5400C7BB08 /* あ_2_3.png */; };
+		70D7FCE919F42D5400C7BB08 /* あ_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 70D7FCD719F42D5400C7BB08 /* あ_2.png */; };
+		70D7FCEA19F42D5400C7BB08 /* あ.png in Resources */ = {isa = PBXBuildFile; fileRef = 70D7FCD819F42D5400C7BB08 /* あ.png */; };
+		70D7FCEB19F42D5400C7BB08 /* い_1_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 70D7FCD919F42D5400C7BB08 /* い_1_1.png */; };
+		70D7FCEC19F42D5400C7BB08 /* い_1_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 70D7FCDA19F42D5400C7BB08 /* い_1_2.png */; };
+		70D7FCED19F42D5400C7BB08 /* い_1_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 70D7FCDB19F42D5400C7BB08 /* い_1_3.png */; };
+		70D7FCEE19F42D5400C7BB08 /* い_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 70D7FCDC19F42D5400C7BB08 /* い_1.png */; };
+		70D7FCEF19F42D5400C7BB08 /* い_2_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 70D7FCDD19F42D5400C7BB08 /* い_2_1.png */; };
+		70D7FCF019F42D5400C7BB08 /* い_2_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 70D7FCDE19F42D5400C7BB08 /* い_2_2.png */; };
+		70D7FCF119F42D5400C7BB08 /* い_2_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 70D7FCDF19F42D5400C7BB08 /* い_2_3.png */; };
+		70D7FCF219F42D5400C7BB08 /* い_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 70D7FCE019F42D5400C7BB08 /* い_2.png */; };
+		70D7FCF319F42D5400C7BB08 /* い.png in Resources */ = {isa = PBXBuildFile; fileRef = 70D7FCE119F42D5400C7BB08 /* い.png */; };
+		70EF69B119FDB01E00C63883 /* hanko@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70EF69B019FDB01E00C63883 /* hanko@2x.png */; };
+		70EF69B319FDB5DC00C63883 /* check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70EF69B219FDB5DC00C63883 /* check@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		701DB7E019E8E4BF0088CE29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 701DB7BE19E8E4BF0088CE29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 701DB7C519E8E4BF0088CE29;
+			remoteInfo = HentaiGana;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		70056F711A06F23A00832A23 /* BaseTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseTransitionAnimator.h; path = ../../OptionsTest/OptionsTest/BaseTransitionAnimator.h; sourceTree = "<group>"; };
+		70056F721A06F23A00832A23 /* BaseTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseTransitionAnimator.m; path = ../../OptionsTest/OptionsTest/BaseTransitionAnimator.m; sourceTree = "<group>"; };
+		70056F731A06F23A00832A23 /* OptionsTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OptionsTransitionAnimator.h; path = ../../OptionsTest/OptionsTest/OptionsTransitionAnimator.h; sourceTree = "<group>"; };
+		70056F741A06F23A00832A23 /* OptionsTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OptionsTransitionAnimator.m; path = ../../OptionsTest/OptionsTest/OptionsTransitionAnimator.m; sourceTree = "<group>"; };
+		70056F751A06F23A00832A23 /* OptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OptionsViewController.h; path = ../../OptionsTest/OptionsTest/OptionsViewController.h; sourceTree = "<group>"; };
+		70056F761A06F23A00832A23 /* OptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OptionsViewController.m; path = ../../OptionsTest/OptionsTest/OptionsViewController.m; sourceTree = "<group>"; };
+		701DB7C619E8E4BF0088CE29 /* HentaiGana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HentaiGana.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		701DB7CA19E8E4BF0088CE29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		701DB7CB19E8E4BF0088CE29 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		701DB7CD19E8E4BF0088CE29 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		701DB7CE19E8E4BF0088CE29 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		701DB7D019E8E4BF0088CE29 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		701DB7D119E8E4BF0088CE29 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		701DB7D419E8E4BF0088CE29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		701DB7D619E8E4BF0088CE29 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		701DB7D919E8E4BF0088CE29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		701DB7DF19E8E4BF0088CE29 /* HentaiGanaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HentaiGanaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		701DB7E419E8E4BF0088CE29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		701DB7E519E8E4BF0088CE29 /* HentaiGanaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HentaiGanaTests.m; sourceTree = "<group>"; };
+		701DB7EF19E8EB090088CE29 /* HentaiGana.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HentaiGana.plist; sourceTree = "<group>"; };
+		701DB7FA19E8FC770088CE29 /* Kana.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Kana.plist; sourceTree = "<group>"; };
+		701DB80E19E8FE3B0088CE29 /* Kanji.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Kanji.plist; sourceTree = "<group>"; };
+		70539D991A072F9200818C9B /* IntroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroViewController.h; sourceTree = "<group>"; };
+		70539D9A1A072F9200818C9B /* IntroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroViewController.m; sourceTree = "<group>"; };
+		70539D9C1A07323500818C9B /* notebookpaper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notebookpaper.png; sourceTree = "<group>"; };
+		70539D9E1A0734A600818C9B /* notepad-page.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "notepad-page.svg"; sourceTree = "<group>"; };
+		70539DA01A073B6500818C9B /* swipe@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "swipe@2x.png"; sourceTree = "<group>"; };
+		70539DAA1A0744A300818C9B /* burger@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "burger@2x.png"; sourceTree = "<group>"; };
+		70539DAC1A0744CD00818C9B /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings@2x.png"; sourceTree = "<group>"; };
+		70539DB01A07459700818C9B /* OldPaper@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "OldPaper@2x.jpg"; sourceTree = "<group>"; };
+		70B3DD3919F4416400562D94 /* Shutoku.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Shutoku.plist; sourceTree = "<group>"; };
+		70B3DD3B19F47D4100562D94 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		70B3DD3C19F47D4100562D94 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		70D7FCD019F42D5400C7BB08 /* あ_1_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "あ_1_1.png"; path = "Images/あ_1_1.png"; sourceTree = "<group>"; };
+		70D7FCD119F42D5400C7BB08 /* あ_1_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "あ_1_2.png"; path = "Images/あ_1_2.png"; sourceTree = "<group>"; };
+		70D7FCD219F42D5400C7BB08 /* あ_1_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "あ_1_3.png"; path = "Images/あ_1_3.png"; sourceTree = "<group>"; };
+		70D7FCD319F42D5400C7BB08 /* あ_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "あ_1.png"; path = "Images/あ_1.png"; sourceTree = "<group>"; };
+		70D7FCD419F42D5400C7BB08 /* あ_2_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "あ_2_1.png"; path = "Images/あ_2_1.png"; sourceTree = "<group>"; };
+		70D7FCD519F42D5400C7BB08 /* あ_2_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "あ_2_2.png"; path = "Images/あ_2_2.png"; sourceTree = "<group>"; };
+		70D7FCD619F42D5400C7BB08 /* あ_2_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "あ_2_3.png"; path = "Images/あ_2_3.png"; sourceTree = "<group>"; };
+		70D7FCD719F42D5400C7BB08 /* あ_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "あ_2.png"; path = "Images/あ_2.png"; sourceTree = "<group>"; };
+		70D7FCD819F42D5400C7BB08 /* あ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "あ.png"; path = "Images/あ.png"; sourceTree = "<group>"; };
+		70D7FCD919F42D5400C7BB08 /* い_1_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "い_1_1.png"; path = "Images/い_1_1.png"; sourceTree = "<group>"; };
+		70D7FCDA19F42D5400C7BB08 /* い_1_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "い_1_2.png"; path = "Images/い_1_2.png"; sourceTree = "<group>"; };
+		70D7FCDB19F42D5400C7BB08 /* い_1_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "い_1_3.png"; path = "Images/い_1_3.png"; sourceTree = "<group>"; };
+		70D7FCDC19F42D5400C7BB08 /* い_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "い_1.png"; path = "Images/い_1.png"; sourceTree = "<group>"; };
+		70D7FCDD19F42D5400C7BB08 /* い_2_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "い_2_1.png"; path = "Images/い_2_1.png"; sourceTree = "<group>"; };
+		70D7FCDE19F42D5400C7BB08 /* い_2_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "い_2_2.png"; path = "Images/い_2_2.png"; sourceTree = "<group>"; };
+		70D7FCDF19F42D5400C7BB08 /* い_2_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "い_2_3.png"; path = "Images/い_2_3.png"; sourceTree = "<group>"; };
+		70D7FCE019F42D5400C7BB08 /* い_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "い_2.png"; path = "Images/い_2.png"; sourceTree = "<group>"; };
+		70D7FCE119F42D5400C7BB08 /* い.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "い.png"; path = "Images/い.png"; sourceTree = "<group>"; };
+		70EF69B019FDB01E00C63883 /* hanko@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hanko@2x.png"; sourceTree = "<group>"; };
+		70EF69B219FDB5DC00C63883 /* check@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		701DB7C319E8E4BF0088CE29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		701DB7DC19E8E4BF0088CE29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		70056F7A1A06F24500832A23 /* Options */ = {
+			isa = PBXGroup;
+			children = (
+				70056F711A06F23A00832A23 /* BaseTransitionAnimator.h */,
+				70056F721A06F23A00832A23 /* BaseTransitionAnimator.m */,
+				70056F731A06F23A00832A23 /* OptionsTransitionAnimator.h */,
+				70056F741A06F23A00832A23 /* OptionsTransitionAnimator.m */,
+				70056F751A06F23A00832A23 /* OptionsViewController.h */,
+				70056F761A06F23A00832A23 /* OptionsViewController.m */,
+			);
+			name = Options;
+			sourceTree = "<group>";
+		};
+		701DB7BD19E8E4BF0088CE29 = {
+			isa = PBXGroup;
+			children = (
+				701DB7EF19E8EB090088CE29 /* HentaiGana.plist */,
+				701DB80E19E8FE3B0088CE29 /* Kanji.plist */,
+				701DB7FA19E8FC770088CE29 /* Kana.plist */,
+				70B3DD3919F4416400562D94 /* Shutoku.plist */,
+				701DB7C819E8E4BF0088CE29 /* HentaiGana */,
+				701DB7E219E8E4BF0088CE29 /* HentaiGanaTests */,
+				701DB7C719E8E4BF0088CE29 /* Products */,
+				701DB7F919E8FA260088CE29 /* images */,
+			);
+			sourceTree = "<group>";
+		};
+		701DB7C719E8E4BF0088CE29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				701DB7C619E8E4BF0088CE29 /* HentaiGana.app */,
+				701DB7DF19E8E4BF0088CE29 /* HentaiGanaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		701DB7C819E8E4BF0088CE29 /* HentaiGana */ = {
+			isa = PBXGroup;
+			children = (
+				70056F7A1A06F24500832A23 /* Options */,
+				701DB7CD19E8E4BF0088CE29 /* AppDelegate.h */,
+				701DB7CE19E8E4BF0088CE29 /* AppDelegate.m */,
+				701DB7D019E8E4BF0088CE29 /* ViewController.h */,
+				701DB7D119E8E4BF0088CE29 /* ViewController.m */,
+				70539D991A072F9200818C9B /* IntroViewController.h */,
+				70539D9A1A072F9200818C9B /* IntroViewController.m */,
+				70B3DD3B19F47D4100562D94 /* SettingsViewController.h */,
+				70B3DD3C19F47D4100562D94 /* SettingsViewController.m */,
+				701DB7D319E8E4BF0088CE29 /* Main.storyboard */,
+				701DB7D619E8E4BF0088CE29 /* Images.xcassets */,
+				701DB7D819E8E4BF0088CE29 /* LaunchScreen.xib */,
+				701DB7C919E8E4BF0088CE29 /* Supporting Files */,
+			);
+			path = HentaiGana;
+			sourceTree = "<group>";
+		};
+		701DB7C919E8E4BF0088CE29 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				701DB7CA19E8E4BF0088CE29 /* Info.plist */,
+				701DB7CB19E8E4BF0088CE29 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		701DB7E219E8E4BF0088CE29 /* HentaiGanaTests */ = {
+			isa = PBXGroup;
+			children = (
+				701DB7E519E8E4BF0088CE29 /* HentaiGanaTests.m */,
+				701DB7E319E8E4BF0088CE29 /* Supporting Files */,
+			);
+			path = HentaiGanaTests;
+			sourceTree = "<group>";
+		};
+		701DB7E319E8E4BF0088CE29 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				701DB7E419E8E4BF0088CE29 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		701DB7F919E8FA260088CE29 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				70539D9C1A07323500818C9B /* notebookpaper.png */,
+				70539D9E1A0734A600818C9B /* notepad-page.svg */,
+				70EF69B219FDB5DC00C63883 /* check@2x.png */,
+				70EF69B019FDB01E00C63883 /* hanko@2x.png */,
+				70D7FCD019F42D5400C7BB08 /* あ_1_1.png */,
+				70D7FCD119F42D5400C7BB08 /* あ_1_2.png */,
+				70D7FCD219F42D5400C7BB08 /* あ_1_3.png */,
+				70D7FCD319F42D5400C7BB08 /* あ_1.png */,
+				70D7FCD419F42D5400C7BB08 /* あ_2_1.png */,
+				70D7FCD519F42D5400C7BB08 /* あ_2_2.png */,
+				70D7FCD619F42D5400C7BB08 /* あ_2_3.png */,
+				70D7FCD719F42D5400C7BB08 /* あ_2.png */,
+				70D7FCD819F42D5400C7BB08 /* あ.png */,
+				70D7FCD919F42D5400C7BB08 /* い_1_1.png */,
+				70D7FCDA19F42D5400C7BB08 /* い_1_2.png */,
+				70D7FCDB19F42D5400C7BB08 /* い_1_3.png */,
+				70D7FCDC19F42D5400C7BB08 /* い_1.png */,
+				70D7FCDD19F42D5400C7BB08 /* い_2_1.png */,
+				70D7FCDE19F42D5400C7BB08 /* い_2_2.png */,
+				70D7FCDF19F42D5400C7BB08 /* い_2_3.png */,
+				70D7FCE019F42D5400C7BB08 /* い_2.png */,
+				70D7FCE119F42D5400C7BB08 /* い.png */,
+				70539DA01A073B6500818C9B /* swipe@2x.png */,
+				70539DAA1A0744A300818C9B /* burger@2x.png */,
+				70539DAC1A0744CD00818C9B /* settings@2x.png */,
+				70539DB01A07459700818C9B /* OldPaper@2x.jpg */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		701DB7C519E8E4BF0088CE29 /* HentaiGana */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 701DB7E919E8E4BF0088CE29 /* Build configuration list for PBXNativeTarget "HentaiGana" */;
+			buildPhases = (
+				701DB7C219E8E4BF0088CE29 /* Sources */,
+				701DB7C319E8E4BF0088CE29 /* Frameworks */,
+				701DB7C419E8E4BF0088CE29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HentaiGana;
+			productName = HentaiGana;
+			productReference = 701DB7C619E8E4BF0088CE29 /* HentaiGana.app */;
+			productType = "com.apple.product-type.application";
+		};
+		701DB7DE19E8E4BF0088CE29 /* HentaiGanaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 701DB7EC19E8E4BF0088CE29 /* Build configuration list for PBXNativeTarget "HentaiGanaTests" */;
+			buildPhases = (
+				701DB7DB19E8E4BF0088CE29 /* Sources */,
+				701DB7DC19E8E4BF0088CE29 /* Frameworks */,
+				701DB7DD19E8E4BF0088CE29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				701DB7E119E8E4BF0088CE29 /* PBXTargetDependency */,
+			);
+			name = HentaiGanaTests;
+			productName = HentaiGanaTests;
+			productReference = 701DB7DF19E8E4BF0088CE29 /* HentaiGanaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		701DB7BE19E8E4BF0088CE29 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Aditya Tannu";
+				TargetAttributes = {
+					701DB7C519E8E4BF0088CE29 = {
+						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = EG3WJ73D78;
+					};
+					701DB7DE19E8E4BF0088CE29 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 701DB7C519E8E4BF0088CE29;
+					};
+				};
+			};
+			buildConfigurationList = 701DB7C119E8E4BF0088CE29 /* Build configuration list for PBXProject "HentaiGana" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 701DB7BD19E8E4BF0088CE29;
+			productRefGroup = 701DB7C719E8E4BF0088CE29 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				701DB7C519E8E4BF0088CE29 /* HentaiGana */,
+				701DB7DE19E8E4BF0088CE29 /* HentaiGanaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		701DB7C419E8E4BF0088CE29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70EF69B319FDB5DC00C63883 /* check@2x.png in Resources */,
+				70D7FCEB19F42D5400C7BB08 /* い_1_1.png in Resources */,
+				70D7FCF119F42D5400C7BB08 /* い_2_3.png in Resources */,
+				70D7FCEF19F42D5400C7BB08 /* い_2_1.png in Resources */,
+				70D7FCE519F42D5400C7BB08 /* あ_1.png in Resources */,
+				701DB7FB19E8FC770088CE29 /* Kana.plist in Resources */,
+				701DB7D519E8E4BF0088CE29 /* Main.storyboard in Resources */,
+				70539D9F1A0734A600818C9B /* notepad-page.svg in Resources */,
+				70D7FCEC19F42D5400C7BB08 /* い_1_2.png in Resources */,
+				70D7FCE219F42D5400C7BB08 /* あ_1_1.png in Resources */,
+				70D7FCE819F42D5400C7BB08 /* あ_2_3.png in Resources */,
+				70D7FCF219F42D5400C7BB08 /* い_2.png in Resources */,
+				70D7FCE719F42D5400C7BB08 /* あ_2_2.png in Resources */,
+				70D7FCEE19F42D5400C7BB08 /* い_1.png in Resources */,
+				70D7FCF319F42D5400C7BB08 /* い.png in Resources */,
+				70D7FCEA19F42D5400C7BB08 /* あ.png in Resources */,
+				701DB7DA19E8E4BF0088CE29 /* LaunchScreen.xib in Resources */,
+				70539DB11A07459700818C9B /* OldPaper@2x.jpg in Resources */,
+				70D7FCE919F42D5400C7BB08 /* あ_2.png in Resources */,
+				701DB80F19E8FE3B0088CE29 /* Kanji.plist in Resources */,
+				70539DAB1A0744A300818C9B /* burger@2x.png in Resources */,
+				701DB7F019E8EB090088CE29 /* HentaiGana.plist in Resources */,
+				70539DAD1A0744CD00818C9B /* settings@2x.png in Resources */,
+				701DB7D719E8E4BF0088CE29 /* Images.xcassets in Resources */,
+				70D7FCED19F42D5400C7BB08 /* い_1_3.png in Resources */,
+				70539DA11A073B6500818C9B /* swipe@2x.png in Resources */,
+				70D7FCF019F42D5400C7BB08 /* い_2_2.png in Resources */,
+				70EF69B119FDB01E00C63883 /* hanko@2x.png in Resources */,
+				70D7FCE419F42D5400C7BB08 /* あ_1_3.png in Resources */,
+				70D7FCE619F42D5400C7BB08 /* あ_2_1.png in Resources */,
+				70539D9D1A07323500818C9B /* notebookpaper.png in Resources */,
+				70D7FCE319F42D5400C7BB08 /* あ_1_2.png in Resources */,
+				70B3DD3A19F4416400562D94 /* Shutoku.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		701DB7DD19E8E4BF0088CE29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		701DB7C219E8E4BF0088CE29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				701DB7D219E8E4BF0088CE29 /* ViewController.m in Sources */,
+				701DB7CF19E8E4BF0088CE29 /* AppDelegate.m in Sources */,
+				701DB7CC19E8E4BF0088CE29 /* main.m in Sources */,
+				70539D9B1A072F9200818C9B /* IntroViewController.m in Sources */,
+				70B3DD3D19F47D4100562D94 /* SettingsViewController.m in Sources */,
+				70056F781A06F23A00832A23 /* OptionsTransitionAnimator.m in Sources */,
+				70056F771A06F23A00832A23 /* BaseTransitionAnimator.m in Sources */,
+				70056F791A06F23A00832A23 /* OptionsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		701DB7DB19E8E4BF0088CE29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				701DB7E619E8E4BF0088CE29 /* HentaiGanaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		701DB7E119E8E4BF0088CE29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 701DB7C519E8E4BF0088CE29 /* HentaiGana */;
+			targetProxy = 701DB7E019E8E4BF0088CE29 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		701DB7D319E8E4BF0088CE29 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				701DB7D419E8E4BF0088CE29 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		701DB7D819E8E4BF0088CE29 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				701DB7D919E8E4BF0088CE29 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		701DB7E719E8E4BF0088CE29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		701DB7E819E8E4BF0088CE29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		701DB7EA19E8E4BF0088CE29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = HentaiGana/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		701DB7EB19E8E4BF0088CE29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = HentaiGana/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		701DB7ED19E8E4BF0088CE29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HentaiGanaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HentaiGana.app/HentaiGana";
+			};
+			name = Debug;
+		};
+		701DB7EE19E8E4BF0088CE29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HentaiGanaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HentaiGana.app/HentaiGana";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		701DB7C119E8E4BF0088CE29 /* Build configuration list for PBXProject "HentaiGana" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				701DB7E719E8E4BF0088CE29 /* Debug */,
+				701DB7E819E8E4BF0088CE29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		701DB7E919E8E4BF0088CE29 /* Build configuration list for PBXNativeTarget "HentaiGana" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				701DB7EA19E8E4BF0088CE29 /* Debug */,
+				701DB7EB19E8E4BF0088CE29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		701DB7EC19E8E4BF0088CE29 /* Build configuration list for PBXNativeTarget "HentaiGanaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				701DB7ED19E8E4BF0088CE29 /* Debug */,
+				701DB7EE19E8E4BF0088CE29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 701DB7BE19E8E4BF0088CE29 /* Project object */;
+}
